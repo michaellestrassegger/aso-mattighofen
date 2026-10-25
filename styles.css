@@ -63,6 +63,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
    background: linear-gradient(120deg, #c8ecff, #eaf8ff);
+}
 
 header {
   background: var(--white);
