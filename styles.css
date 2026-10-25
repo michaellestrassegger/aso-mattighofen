@@ -223,17 +223,6 @@ nav .active {
   font-size: 1rem;
 }
 
-/* Kontakt */
-
-.contact {
-  padding: 25px 0;
-  background: linear-gradient(120deg, #c8ecff, #eaf8ff);
-}
-
-.contact-content p {
-  margin-bottom: 0;
-}
-
 /* Footer */
 
 footer {
