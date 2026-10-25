@@ -62,7 +62,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(120deg, #dff4ff, #f4fbff);
+  background: linear-gradient(120deg, var(--light-blue), var(--dark-blue));
 
 header {
   background: var(--white);
@@ -128,7 +128,7 @@ nav a:hover, nav .active {
 /* Hero */
 
 .hero {
-  background: linear-gradient(120deg, #dff4ff, #f4fbff);
+  background: linear-gradient(120deg, var(--light-blue), var(--dark-blue));
   padding: 45px 0;
 }
 
