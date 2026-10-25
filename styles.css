@@ -53,12 +53,16 @@ a:hover {
 
 /* Navigation */
 
-.navigation, .logo, nav, .contact-content,
-.footer-content {
+.navigation, .logo, nav, .contact-content{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(120deg, #dff4ff, #f4fbff);
 
 header {
   background: var(--white);
