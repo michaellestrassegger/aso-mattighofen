@@ -138,6 +138,7 @@ nav .active {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  color: var(--white);
 }
 
 .hero-content > div:first-child {
@@ -240,6 +241,7 @@ footer {
   padding: 20px 0;
   background: var(--gradient);
   font-size: 0.9rem;
+  color: var(--white);
 }
 
 .footer-content div {
