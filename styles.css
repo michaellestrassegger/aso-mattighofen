@@ -9,6 +9,7 @@
   --light-blue: #eaf7fd;
   --text: #315b75;
   --white: #ffffff;
+  --gradient: linear-gradient(120deg, #c8ecff, #124d73);
 }
 
 body {
@@ -53,21 +54,14 @@ a:hover {
 
 /* Navigation */
 
-.navigation, .logo, nav, .contact-content{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+.navigation,
+.logo,
+nav,
+.contact-content,
 .footer-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-footer {
-  padding: 20px 0;
-  background: linear-gradient(120deg, #c8ecff, #eaf8ff);
-  font-size: 0.9rem;
 }
 
 header {
@@ -104,7 +98,8 @@ nav a {
   padding: 10px 0;
 }
 
-nav a:hover, nav .active {
+nav a:hover,
+nav .active {
   border-bottom: 3px solid var(--blue);
 }
 
@@ -134,7 +129,7 @@ nav a:hover, nav .active {
 /* Hero */
 
 .hero {
-   background: linear-gradient(120deg, #c8ecff, #eaf8ff);
+  background: var(--gradient);
   padding: 45px 0;
 }
 
@@ -180,8 +175,7 @@ nav a:hover, nav .active {
 }
 
 .intro {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding: 45px 0;
 }
 
 .card {
@@ -240,9 +234,11 @@ nav a:hover, nav .active {
   margin-bottom: 0;
 }
 
+/* Footer */
+
 footer {
   padding: 20px 0;
-  background: #f8fcfe;
+  background: var(--gradient);
   font-size: 0.9rem;
 }
 
@@ -251,10 +247,46 @@ footer {
   gap: 22px;
 }
 
+footer a {
+  color: var(--dark-blue);
+}
+
+footer a:hover {
+  color: var(--blue);
+}
+
+/* Teamseite */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.team-card img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.team-card p {
+  font-size: 0.875rem;
+}
+
 /* Mobile */
 
 @media (max-width: 750px) {
-  .navigation, .hero-content, .contact-content,
+  .navigation,
+  .hero-content,
+  .contact-content,
   .footer-content {
     flex-direction: column;
     gap: 20px;
@@ -277,7 +309,9 @@ footer {
     font-size: 5rem;
   }
 
-  .grid, .features .grid {
+  .grid,
+  .features .grid,
+  .team-grid {
     grid-template-columns: 1fr;
   }
 
@@ -291,27 +325,4 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
-}
-
-/*Team seite*/
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-}
-
-.team-card {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.team-card img {
-  width: 100px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-.team-card p {
-  font-size: 1rem;
 }
