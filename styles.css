@@ -284,15 +284,16 @@ footer {
   }
 }
 /*Team seite*/
-.team-card {
+.team-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
+
+.team-card {
+  display: flex;
   align-items: center;
   gap: 15px;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .team-card img {
