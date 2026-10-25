@@ -287,9 +287,7 @@ footer {
     justify-content: center;
   }
 }
-.team-grid {
-  grid-template-columns: 1fr;
-}
+
 /*Team seite*/
 .team-grid {
   display: grid;
