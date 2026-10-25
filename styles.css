@@ -161,7 +161,7 @@ nav a:hover, nav .active {
   font-size: 7rem;
 }
 
-/* Intro and cards */
+/* Karten */
 
 .grid {
   display: grid;
@@ -219,7 +219,7 @@ nav a:hover, nav .active {
   font-size: 1rem;
 }
 
-/* Contact and footer */
+/* Kontakt */
 
 .contact {
   padding: 25px 0;
@@ -281,4 +281,20 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+/*Team seite*/
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.team-card img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
 }
