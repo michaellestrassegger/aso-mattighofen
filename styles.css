@@ -322,3 +322,11 @@ footer a:hover {
     justify-content: center;
   }
 }
+
+/*Spenden*/
+.spenden{
+  padding: 25px;
+  border: 1px solid #b9dff2;
+  border-radius: 10px;
+  background: var(--light-blue);
+}
