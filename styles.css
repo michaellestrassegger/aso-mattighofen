@@ -58,11 +58,16 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
-.footer-content{
+.footer-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-   background: linear-gradient(120deg, #c8ecff, #eaf8ff);
+}
+
+footer {
+  padding: 20px 0;
+  background: linear-gradient(120deg, #c8ecff, #eaf8ff);
+  font-size: 0.9rem;
 }
 
 header {
