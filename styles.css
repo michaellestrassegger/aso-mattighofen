@@ -330,3 +330,6 @@ footer a:hover {
   border-radius: 10px;
   background: #f1e9e5;
 }
+#unterricht, #gts {
+  scroll-margin-top: 100px;
+}
