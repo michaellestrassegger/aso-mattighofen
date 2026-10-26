@@ -271,7 +271,7 @@ footer a:hover {
   font-size: 0.875rem;
 }
 
-.team-card:target {
+.team-card:target, .therapie:target {
   background: var(--light-blue);
   border-radius: 8px;
   padding: 10px;
