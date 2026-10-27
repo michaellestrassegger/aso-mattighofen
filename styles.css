@@ -333,3 +333,15 @@ footer a:hover {
 #unterricht, #gts {
   scroll-margin-top: 100px;
 }
+
+/*Speisepläne*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
