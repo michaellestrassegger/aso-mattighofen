@@ -276,7 +276,18 @@ footer a:hover {
   border-radius: 8px;
   padding: 10px;
 }
+/*Klassen*/
+.klasse-titel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.klasse-titel h2 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 0;
+}
 /* Mobile */
 
 @media (max-width: 750px) {
