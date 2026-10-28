@@ -30,6 +30,40 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
+/*Slider*/
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.slider-bilder {
+  width: 100%;
+  max-width: 650px;
+}
+
+.slider-bilder img {
+  display: none;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.slider-bilder img.aktiv {
+  display: block;
+}
+
+.slider button {
+  background: var(--dark-blue);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+}
 h1 {
   font-size: 3.2rem;
   margin: 15px 0;
