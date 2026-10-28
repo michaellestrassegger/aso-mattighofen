@@ -1,6 +1,5 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Hintergrund erstellen
   const overlay = document.createElement("div");
   overlay.id = "lightbox";
 
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.body.appendChild(overlay);
 
-  // Gestaltung direkt über JavaScript hinzufügen
   const style = document.createElement("style");
 
   style.textContent = `
@@ -33,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     #lightbox-bild {
       display: block;
-      max-width: 100%;
-      max-height: 100%;
+      max-width: 95vw;
+      max-height: 95vh;
       width: auto;
       height: auto;
       object-fit: contain;
