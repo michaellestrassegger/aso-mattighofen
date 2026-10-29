@@ -294,7 +294,7 @@ footer a:hover {
   gap: 15px;
 }
 
-.team-card img {
+.team-card img, .teacher-placeholder {
   width: 100px;
   height: 120px;
   object-fit: cover;
