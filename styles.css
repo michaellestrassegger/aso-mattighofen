@@ -302,16 +302,16 @@ footer a:hover {
   flex-shrink: 0;
 }
 
-.teacher-placeholder {
-    width: 120px;
+teacher-placeholder {
+    width: 100px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 8px;
     background-color: #eaf7fd;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 65px;
-    margin: 0 auto 15px;
+    font-size: 50px;
+    flex-shrink: 0;
 }
 
 .team-card p {
