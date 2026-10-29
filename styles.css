@@ -64,7 +64,17 @@ h1, h2, h3 {
   padding: 10px;
   cursor: pointer;
 }
+/*Bilder wie Slyder*/
+.bilder {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 25px auto;
 }
+
 h1 {
   font-size: 3.2rem;
   margin: 15px 0;
@@ -404,3 +414,4 @@ th, td {
   padding: 10px;
   text-align: left;
 }
+
