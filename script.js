@@ -116,7 +116,29 @@ document.addEventListener("DOMContentLoaded", function () {
       lightboxSchliessen();
     }
   });
-if (bilder.length > 0) {
+  // Slider
+  document.querySelectorAll(".slider").forEach(function (slider) {
+    const bilder = slider.querySelectorAll(".slider-bilder img");
+    const zurueck = slider.querySelector(".slider-zurueck");
+    const weiter = slider.querySelector(".slider-weiter");
+
+    let aktuellesBild = 0;
+
+    function bildAnzeigen(index) {
+      bilder[aktuellesBild].classList.remove("aktiv");
+
+      if (index >= bilder.length) {
+        aktuellesBild = 0;
+      } else if (index < 0) {
+        aktuellesBild = bilder.length - 1;
+      } else {
+        aktuellesBild = index;
+      }
+
+      bilder[aktuellesBild].classList.add("aktiv");
+    }
+
+    if (bilder.length > 0) {
       bilder[0].classList.add("aktiv");
     }
 
@@ -128,6 +150,8 @@ if (bilder.length > 0) {
       bildAnzeigen(aktuellesBild - 1);
     });
   });
+
+});
   
 });
 
