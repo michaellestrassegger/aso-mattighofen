@@ -440,7 +440,7 @@ th, td {
   margin-bottom: 18px;
 }
 
-.beitrag img {
+.beitrag > img {
   display: block;
   max-width: 100%;
   height: auto;
