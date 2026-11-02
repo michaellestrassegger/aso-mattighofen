@@ -1,4 +1,4 @@
-
+console.log("JS geladen");
 document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.createElement("div");
   overlay.id = "lightbox";
