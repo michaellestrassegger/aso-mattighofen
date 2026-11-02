@@ -116,41 +116,19 @@ document.addEventListener("DOMContentLoaded", function () {
       lightboxSchliessen();
     }
   });
-});
-
-//Slyder
-
-document.querySelectorAll(".slider").forEach(function (slider) {
-  const bilder = slider.querySelectorAll(".slider-bilder img");
-  const zurueck = slider.querySelector(".slider-zurueck");
-  const weiter = slider.querySelector(".slider-weiter");
-
-  let aktuellesBild = 0;
-
-  function bildAnzeigen(index) {
-    bilder[aktuellesBild].classList.remove("aktiv");
-
-    if (index >= bilder.length) {
-      aktuellesBild = 0;
-    } else if (index < 0) {
-      aktuellesBild = bilder.length - 1;
-    } else {
-      aktuellesBild = index;
+if (bilder.length > 0) {
+      bilder[0].classList.add("aktiv");
     }
 
-    bilder[aktuellesBild].classList.add("aktiv");
-  }
+    weiter.addEventListener("click", function () {
+      bildAnzeigen(aktuellesBild + 1);
+    });
 
-  if (bilder.length > 0) {
-    bilder[0].classList.add("aktiv");
-  }
-
-  weiter.addEventListener("click", function () {
-    bildAnzeigen(aktuellesBild + 1);
+    zurueck.addEventListener("click", function () {
+      bildAnzeigen(aktuellesBild - 1);
+    });
   });
-
-  zurueck.addEventListener("click", function () {
-    bildAnzeigen(aktuellesBild - 1);
-  });
+  
 });
+
 
