@@ -413,4 +413,41 @@ th, td {
   padding: 10px;
   text-align: left;
 }
+/*Aktuelles*/
+.aktuelles {
+  max-width: 850px;
+  margin: 30px auto;
+}
 
+.beitrag {
+  background: white;
+  border: 1px solid #d6e3eb;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.beitrag h2 {
+  color: var(--dark-blue);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.datum {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.beitrag img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 6px;
+}
+
+.beitrag p {
+  line-height: 1.6;
+}
