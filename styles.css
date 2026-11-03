@@ -355,7 +355,20 @@ footer a:hover {
     flex-direction: column;
     gap: 20px;
   }
+  
+  .aktuelles-layout {
+    flex-direction: column;
+  }
 
+  .archiv-box {
+    order: -1;
+    position: static;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
   nav {
     flex-wrap: wrap;
     justify-content: center;
