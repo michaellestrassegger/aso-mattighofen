@@ -19,6 +19,34 @@ body {
   line-height: 1.6;
 }
 
+/* Barrierefreiheit */
+.barrierefreiheit {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 10px 5%;
+}
+
+.barrierefreiheit button {
+  background-color: #eaf7fd;
+  color: #124d73;
+  border: 1px solid #218fc1;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.barrierefreiheit button:hover {
+  background-color: #c8ecff;
+}
+
+.barrierefreiheit button:focus-visible {
+  outline: 3px solid #124d73;
+  outline-offset: 3px;
+}
+
+
 .container {
   width: 90%;
   max-width: 1160px;
