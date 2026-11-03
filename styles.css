@@ -487,25 +487,3 @@ th, td {
   background: var(--blue);
   color: white;
 }
-.aktuelles-layout{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  max-width: 1100px;
-  margin: 30px auto;
-}
-.archiv-box {
-  position: sticky;
-  top: 30px;
-  width: 150px;
-  flex-shrink: 0;
-  padding: 15px;
-  background: var(--light-blue);
-  border-radius: 8px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-}
