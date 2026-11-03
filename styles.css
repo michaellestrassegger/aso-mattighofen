@@ -9,7 +9,8 @@
   --light-blue: #eaf7fd;
   --text: #315b75;
   --white: #ffffff;
-  --gradient: linear-gradient(120deg, #c8ecff, #ffffff);
+  --peach: #f6d6a8;
+  --gradient: linear-gradient(120deg, var(--peach), #ffffff);
 }
 
 body {
