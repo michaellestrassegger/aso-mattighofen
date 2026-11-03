@@ -1,4 +1,4 @@
-
+```css
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -31,50 +31,6 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-/*Slider*/
-.slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin: 25px 0;
-}
-
-.slider-bilder {
-  width: 100%;
-  max-width: 650px;
-}
-
-.slider .slider-bilder img {
-  display: none;
-  width: 100%;
-  height: 350px;
-  object-fit: contain;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.slider .slider-bilder img.aktiv {
-  display: block;
-}
-
-.slider button {
-  background: var(--dark-blue);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-/*Bilder wie Slyder*/
-.bilder {
-  display: block;
-  width: 100%;
-  max-width: 650px;
-  height: auto;
-  border-radius: 8px;
-  margin: 25px auto;
-}
-
 h1 {
   font-size: 3.2rem;
   margin: 15px 0;
@@ -101,7 +57,6 @@ a:hover {
 
 .navigation,
 .logo,
-nav,
 .contact-content,
 .footer-content {
   display: flex;
@@ -135,7 +90,10 @@ header {
   font-size: 1.8rem;
 }
 
-nav {
+.navigation nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 25px;
 }
 
@@ -256,230 +214,4 @@ nav .active {
 .features {
   padding: 25px 0 35px;
   background: var(--light-blue);
-  text-align: center;
-}
-
-.features .grid {
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.features h3 {
-  font-size: 1rem;
-}
-
-/* Footer */
-
-footer {
-  padding: 20px 0;
-  background: var(--gradient);
-  font-size: 0.9rem;
-}
-
-.footer-content div {
-  display: flex;
-  gap: 22px;
-}
-
-footer a {
-  color: var(--dark-blue);
-}
-
-footer a:hover {
-  color: var(--blue);
-}
-
-/* Teamseite */
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  margin-bottom: 45px;
-}
-
-.team-card {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.team-card img{
-  width: 100px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-.teacher-placeholder {
-    width: 100px;
-    height: 120px;
-    border-radius: 8px;
-    background-color: #eaf7fd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    flex-shrink: 0;
-}
-
-.team-card p {
-  font-size: 0.875rem;
-}
-
-.team-card:target, .therapie:target {
-  background: var(--light-blue);
-  border-radius: 8px;
-  padding: 10px;
-}
-/*Klassen*/
-.klasse-titel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.klasse-titel h2 {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  margin: 0;
-}
-/* Mobile */
-
-@media (max-width: 750px) {
-  .navigation,
-  .hero-content,
-  .contact-content,
-  .footer-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 20px;
-  }
-
-  h1 {
-    font-size: 2.3rem;
-  }
-
-  .hero-image {
-    flex-basis: auto;
-    width: 220px;
-    height: 220px;
-    font-size: 5rem;
-  }
-
-  .grid,
-  .features .grid,
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .card + .card {
-    border-left: none;
-    border-top: 1px solid #c9e8f8;
-    padding: 25px 10px 10px;
-  }
-
-  .footer-content div {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-/*Spenden*/
-.spenden{
-  padding: 25px;
-  border: 1px solid #b9dff2;
-  border-radius: 10px;
-  background: #f1e9e5;
-}
-#unterricht, #gts {
-  scroll-margin-top: 100px;
-}
-
-/*Speisepläne*/
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: left;
-}
-/*Aktuelles*/
-.aktuelles {
-  max-width: 850px;
-  flex: 1;
-  max-width: 850px;
-  margin: 0;
-}
-
-.beitrag {
-  background: white;
-  border: 1px solid #d6e3eb;
-  border-radius: 8px;
-  padding: 25px;
-  margin-bottom: 25px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-}
-
-.beitrag h2 {
-  color: var(--dark-blue);
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.datum {
-  color: #777;
-  font-size: 14px;
-  margin-bottom: 18px;
-}
-
-.beitrag > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 15px auto;
-  border-radius: 6px;
-}
-
-.beitrag p {
-  line-height: 1.6;
-}
-.nach-oben {
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--dark-blue);
-  color: white;
-  font-size: 28px;
-  border-radius: 50%;
-  text-decoration: none;
-  z-index: 100;
-}
-
-.nach-oben:hover {
-  background: var(--blue);
-  color: white;
-}
-.aktuelles-layout{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  max-width: 1100px;
-  margin: 30px auto;
-}
+  text-align
