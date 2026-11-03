@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Jedes Foto auf der Seite anklickbar machen
   document.addEventListener("click", function (event) {
-    const foto = event.target.closest("img");
+    const foto = event.target.closest("img:not(.logo)");
 
     if (!foto || !foto.src || overlay.contains(foto)) {
       return;
