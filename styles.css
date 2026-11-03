@@ -474,8 +474,18 @@ th, td {
   background: var(--blue);
   color: white;
 }
+
+/*Aktuelles*/
 .aktuelles {
   max-width: 850px;
   margin: 30px auto;
   padding: 0 15px;
+}
+archiv-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px 20px;
 }
