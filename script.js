@@ -152,8 +152,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
-
-let text = document.querySelector("main").innerText;
+document.getElementById("vorlesen").addEventListener("click", function() {
+  let text = document.querySelector("main").innerText;
 
   let vorleseText = new SpeechSynthesisUtterance(text);
   vorleseText.lang = "de-AT";
