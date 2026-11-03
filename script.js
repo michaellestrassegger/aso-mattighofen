@@ -1,4 +1,4 @@
-console.log("JS geladen");
+
 document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.createElement("div");
   overlay.id = "lightbox";
@@ -153,4 +153,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+let text = document.querySelector("main").innerText;
+
+  let vorleseText = new SpeechSynthesisUtterance(text);
+  vorleseText.lang = "de-AT";
+
+  vorleseText.onend = function() {
+    document.getElementById("vorlesen").textContent = "🔊 Vorlesen";
+  };
+
+  speechSynthesis.speak(vorleseText);
+
+  this.textContent = "⏹ Vorlesen stoppen";
+});
 
