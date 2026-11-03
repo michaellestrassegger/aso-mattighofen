@@ -1,4 +1,5 @@
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.createElement("div");
   overlay.id = "lightbox";
@@ -153,6 +154,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 document.getElementById("vorlesen").addEventListener("click", function() {
+  if (speechSynthesis.speaking) {
+    speechSynthesis.cancel();
+    this.textContent = "🔊 Vorlesen";
+    return;
+  }
+  
   let text = document.querySelector("main").innerText;
 
   let vorleseText = new SpeechSynthesisUtterance(text);
