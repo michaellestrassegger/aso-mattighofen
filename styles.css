@@ -44,7 +44,7 @@ h1, h2, h3 {
   max-width: 650px;
 }
 
-.beitrag .slider-bilder img {
+.slider .slider-bilder img {
   display: none;
   width: 100%;
   height: 350px;
@@ -53,7 +53,7 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
-.beitrag .slider-bilder img.aktiv {
+.slider .slider-bilder img.aktiv {
   display: block;
 }
 
