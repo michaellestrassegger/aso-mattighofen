@@ -155,24 +155,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //Text vorlesen
-document.getElementById("vorlesen").addEventListener("click", function() {
-  if (speechSynthesis.speaking) {
+// Vorlesefunktion
+const vorlesenButton = document.getElementById("vorlesen");
+
+let vorleseText;
+
+vorlesenButton.addEventListener("click", function() {
+
+  // Vorlesen stoppen
+  if (speechSynthesis.speaking || speechSynthesis.pending) {
     speechSynthesis.cancel();
-    this.textContent = "🔊 Vorlesen";
+    vorlesenButton.textContent = "🔊 Vorlesen";
     return;
   }
-  
+
   let text = document.querySelector("main").innerText;
 
-  let vorleseText = new SpeechSynthesisUtterance(text);
+  vorleseText = new SpeechSynthesisUtterance(text);
   vorleseText.lang = "de-AT";
 
   vorleseText.onend = function() {
-    document.getElementById("vorlesen").textContent = "🔊 Vorlesen";
+    vorlesenButton.textContent = "🔊 Vorlesen";
+  };
+
+  vorleseText.onerror = function() {
+    vorlesenButton.textContent = "🔊 Vorlesen";
   };
 
   speechSynthesis.speak(vorleseText);
 
-  this.textContent = "⏹ Vorlesen stoppen";
+  vorlesenButton.textContent = "⏹ Vorlesen stoppen";
 });
-
