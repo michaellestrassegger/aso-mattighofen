@@ -186,3 +186,24 @@ vorlesenButton.addEventListener("click", function() {
 
   vorlesenButton.textContent = "⏹ Vorlesen stoppen";
 });
+
+// Schriftgröße verändern
+let schriftGroesse = 100;
+
+document.getElementById("schriftGroesser").addEventListener("click", function() {
+
+  if (schriftGroesse < 150) {
+    schriftGroesse += 10;
+    document.documentElement.style.fontSize = schriftGroesse + "%";
+  }
+
+});
+
+document.getElementById("schriftKleiner").addEventListener("click", function() {
+
+  if (schriftGroesse > 80) {
+    schriftGroesse -= 10;
+    document.documentElement.style.fontSize = schriftGroesse + "%";
+  }
+
+});
