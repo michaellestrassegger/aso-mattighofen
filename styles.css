@@ -1,6 +1,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -450,4 +451,25 @@ th, td {
 
 .beitrag p {
   line-height: 1.6;
+}
+.nach-oben {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-blue);
+  color: white;
+  font-size: 28px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.nach-oben:hover {
+  background: var(--blue);
+  color: white;
 }
