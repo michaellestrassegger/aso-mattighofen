@@ -153,6 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+//Text vorlesen
 document.getElementById("vorlesen").addEventListener("click", function() {
   if (speechSynthesis.speaking) {
     speechSynthesis.cancel();
