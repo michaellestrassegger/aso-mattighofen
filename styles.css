@@ -489,6 +489,6 @@ archiv-nav {
   margin: 0 auto;
   padding: 12px 20px;
 }
-.aktuelles h2[id] {
+.aktuelles article[id] {
   scroll-margin-top: 25px;
 }
